@@ -1,10 +1,11 @@
 ﻿using System.Diagnostics;
-
+/*
+ * Fredrik Nellbeck
+ * .NET23_OOP
+ * Systemutveckling.NET med AI-kompetens
+*/
 namespace Lab_6
 {
-    
-    
-       
     internal class Program
     {
         static void Main(string[] args)
@@ -14,7 +15,7 @@ namespace Lab_6
             Dog retriverDog = new GoldenRetriver();
             Dog dog = new Dog();
             Cat cat = new Cat();
-            Rat rat = new Rat(); 
+            Rat rat = new Rat();  
 
             animal.makeSound();
             Console.WriteLine();
