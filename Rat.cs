@@ -8,27 +8,31 @@ namespace Lab_6
 {
     class Rat : Animal
     {
-        string eatChesse { get; set; } // new variable for just this sub-class without any default values.
+        string _EatChesse { get; set; } // new variable for just this sub-class without any default values.
+
+        public Rat()
+        {
+            _Eyes = 2;
+            _Fur = "dirty fur";
+            _Teeth = "nawing teeth";
+            _Sound = "squeeks!";
+            _Tail = "short tail";
+            _Name = "Wessel";
+            _AnimalType = "The Rat"; 
+            _EatChesse = "eats chesse!";
+        }
 
         public void TheRat() // new method that holds new variable values from the base-class and methods from the base-class.
         {
-            fur = "dirty fur";
-            teeth = "nawing teeth";
-            sound = "squeeks!";
-            tail = "short tail";
-            name = "Wessel";
-            animalType = "The Rat";
-
             Sleep();
             Eyes();
             Tail();
-            makeSound();
+            MakeSound();
             ChesseEater();
         }
         public void ChesseEater() // unique method for just this sub-class
         {
-            eatChesse = "eats chesse!";
-            Console.WriteLine($"{name} {animalType} {eatChesse}");
+            Console.WriteLine($"{_Name} {_AnimalType} {_EatChesse}");
         }
     }
 }

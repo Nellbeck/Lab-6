@@ -10,32 +10,31 @@ namespace Lab_6
     {
         static void Main(string[] args)
         {
-            Animal animal = new Animal();
-            Dog jackDog = new JackRussell();
-            Dog retriverDog = new GoldenRetriver();
-            Dog dog = new Dog();
-            Cat cat = new Cat();
-            Rat rat = new Rat();  
+            Animal animal = new Animal("Bosse", "Bird", "roars.");
+            Animal jackDog = new JackRussell();
+            Animal retriverDog = new GoldenRetriver();
+            Animal dog = new Dog();
+            Animal cat = new Cat();
+            Animal rat = new Rat();  
 
-            animal.makeSound();
+            animal.MakeSound();
             Console.WriteLine();
 
-            animal.newAnimal("Bosse","Bird");
+            jackDog.MakeSound();
             Console.WriteLine();
 
-            jackDog.DogChases();
+            retriverDog.MakeSound();
             Console.WriteLine();
 
-            retriverDog.DogChases();
+            dog.MakeSound();
             Console.WriteLine();
 
-            dog.TheDog();
+            cat.MakeSound();
             Console.WriteLine();
 
-            cat.TheCat();
-            Console.WriteLine();
+            rat.
 
-            rat.TheRat(); // Calls the diffrent methods and it's new values.
+            rat.MakeSound(); // Calls the diffrent methods and it's new values.
         }
     }
 }

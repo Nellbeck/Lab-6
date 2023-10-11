@@ -6,32 +6,33 @@ using System.Threading.Tasks;
 
 namespace Lab_6
 {
-    public class Cat : Animal
+    class Cat : Animal
         {
-            public string jumps { get; set; } // new variable for just this sub-class without any default values.
+            public string _Jumps { get; set; } // new variable for just this sub-class without any default values.
+        public Cat()
+        {
+            _Eyes = 2;
+            _Fur = "soft fur";
+            _Teeth = "sparkling teeth";
+            _Sound = "purrs!";
+            _Tail = "fluffy tail";
+            _Name = "Frazze";
+            _AnimalType = "The Cat";
+            _Jumps = "jumps!";
+        }
 
-            public void TheCat() // new method that holds new variable values from the base-class and methods from the base-class.
+        public void TheCat() // new method that holds new variable values from the base-class and methods from the base-class.
             {
-                fur = "soft fur";
-                teeth = "sparkling teeth";
-                sound = "purrs!";
-                tail = "fluffy tail";
-                name = "Frazze";
-                animalType = "The Cat";
-
-                newAnimal(name, animalType);
                 Sleep();
                 Eyes();
                 Tail();
-                makeSound();
+                MakeSound();
                 CatJumps();
             }
 
             public void CatJumps() // unique method for just this sub-class
             {
-                jumps = "jumps!";
-                Console.WriteLine($"{name} {animalType} {jumps}");
-
+            Console.WriteLine($"{_Name} {_AnimalType} {_Jumps}");
             }
         }
     }

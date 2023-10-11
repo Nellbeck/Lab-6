@@ -8,33 +8,50 @@ namespace Lab_6
 {
     public class Animal
     {
-        public string animalType = "The Horse";
-        public string name = "Hasse";
-        public int eyes = 2;
-        public string fur = "dirty";
-        public string teeth = "jagged";
-        public string tail = "no tail";
-        public string sound = "sounds like a human."; // public variables with some default values.
+        protected string _AnimalType { get; set; }
+        protected string _Name { get; set; }
+        protected int _Eyes { get; set; }
+        protected string _Fur { get; set; }
+        protected string _Teeth { get; set; }
+        protected string _Tail { get; set; }
+        protected string _Sound { get; set; } // public variables with some default values.
+
+        public Animal() 
+        { 
+        
+        }
+
+        public Animal(string name, string type, string sound)
+        {
+            _Name = name;
+            _AnimalType = type;
+            _Sound = sound;
+        }
 
         public void Sleep()
         {
-            Console.WriteLine($"{name} {animalType} is sleeping!");
+            Console.WriteLine($"{_Name} {_AnimalType} is sleeping!");
         }
+
         public void Eyes()
         {
-            Console.WriteLine($"{name} {animalType} have {eyes} eyes.");
+            Console.WriteLine($"{_Name} {_AnimalType} have {_Eyes} eyes.");
         }
+
         public void Tail()
         {
-            Console.WriteLine($"{name} {animalType} have a {tail}.");
+            Console.WriteLine($"{_Name} {_AnimalType} have a {_Tail}.");
         }
-        public void makeSound()
+
+        public void MakeSound()
         {
-            Console.WriteLine($"{name} {animalType} {sound}");
+            Console.WriteLine($"{_Name} {_AnimalType} {_Sound}");
         }
-        public void newAnimal(string name, string type) // method that will create a new animal
+
+        public void NewAnimal() // method that will create a new animal
         {
-            Console.WriteLine($"{name} {type}.");
+
+            Console.WriteLine($"{_Name} {_AnimalType}.");
         }
     }  // diffrent methods that's shared amongs the sub-classes.
 }

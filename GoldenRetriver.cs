@@ -8,12 +8,15 @@ namespace Lab_6
 {
     class GoldenRetriver : Dog // new sub-class that got "Dog" as it's "base-class"
     {
+        public GoldenRetriver()
+        {
+            _Name = "Hubby";
+            _AnimalType = "The Golden Retriever";
+            _Chase = "chases a cat!";
+        }
         public override void DogChases() // method that overrides the base-class method.
         {
-            name = "Hubby";
-            animalType = "The Golden Retriever";
-            chase = "chases!";
-            Console.WriteLine($"{name} {animalType} {chase}");
+            Console.WriteLine($"{_Name} {_AnimalType} {_Chase}");
         }
     }
 }
