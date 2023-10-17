@@ -14,7 +14,7 @@ namespace Lab_6
         protected string _Fur { get; set; }
         protected string _Teeth { get; set; }
         protected string _Tail { get; set; }
-        protected string _Sound { get; set; } // public variables with some default values.
+        protected string _Sound { get; set; } // protected propertys that every sub-class inheritance.
 
         public Animal() 
         { 
@@ -48,10 +48,5 @@ namespace Lab_6
             Console.WriteLine($"{_Name} {_AnimalType} {_Sound}");
         }
 
-        public void NewAnimal() // method that will create a new animal
-        {
-
-            Console.WriteLine($"{_Name} {_AnimalType}.");
-        }
     }  // diffrent methods that's shared amongs the sub-classes.
 }

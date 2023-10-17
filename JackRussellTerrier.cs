@@ -12,11 +12,11 @@ namespace Lab_6
         {
             _Name = "Jack";
             _AnimalType = "The Jack Russell";
-            _Chase = "chases his tail!";
+            _Chase = "chases his tail";
         }
         public override void DogChases() // method that overrides the base-class method.
         {
-            Console.WriteLine($"{_Name} {_AnimalType} {_Chase}");
+            Console.WriteLine($"{_Name} {_AnimalType} {_Chase} inside a car.");
         }
     }
 }

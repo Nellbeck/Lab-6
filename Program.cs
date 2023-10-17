@@ -1,8 +1,9 @@
 ﻿using System.Diagnostics;
+using System.Globalization;
 /*
- * Fredrik Nellbeck
- * .NET23_OOP
- * Systemutveckling.NET med AI-kompetens
+* Fredrik Nellbeck
+* .NET23_OOP
+* Systemutveckling.NET med AI-kompetens
 */
 namespace Lab_6
 {
@@ -10,31 +11,51 @@ namespace Lab_6
     {
         static void Main(string[] args)
         {
-            Animal animal = new Animal("Bosse", "The Bird", "roars.");
-            Dog jackDog = new JackRussell();
-            Dog retriverDog = new GoldenRetriver();
-            Dog dog = new Dog();
-            Cat cat = new Cat();
-            Rat rat = new Rat();  
+            List<Animal> animals = new List<Animal>()
+            {
+                new Animal("Bosse", "The Bird", "roars!"),
+                new JackRussell(),
+                new GoldenRetriver(),
+                new Dog(),
+                new Cat(),
+                new Rat()
+            };
 
-            animal.MakeSound();
-            Console.WriteLine();
+            foreach (var function in animals) 
+            {
+                function.MakeSound();
+                Console.WriteLine();
+            }
+            //Animal animal = new Animal("Bosse", "The Bird", "roars.");
+            //Dog jackDog = new JackRussell();
+            //Dog retriverDog = new GoldenRetriver();
+            //Dog dog = new Dog();
+            //Cat cat = new Cat();
+            //Rat rat = new Rat();  
 
-            jackDog.MakeSound();
-            Console.WriteLine();
+            //animal.MakeSound();
+            //Console.WriteLine();
 
-            retriverDog.MakeSound();
-            Console.WriteLine();
+            //jackDog.MakeSound();
+            //jackDog.DogChases();
+            //Console.WriteLine();
 
-            dog.MakeSound();
-            Console.WriteLine();
+            //retriverDog.MakeSound();
+            //retriverDog.DogChases();
+            //Console.WriteLine();
 
-            cat.MakeSound();
-            Console.WriteLine();
+            //dog.MakeSound();
+            //dog.DogChases();
+            //Console.WriteLine();
 
-            rat.MakeSound();
+            //cat.MakeSound();
+            //cat.CatJumps();
+            //Console.WriteLine();
 
-             // Calls the diffrent methods and it's new values.
+            //rat.MakeSound();
+            
+
+             // Calls the diffrent methods from the objects and it's new values.
         }
     }
 }
