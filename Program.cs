@@ -11,13 +11,14 @@ namespace Lab_6
         static void Main(string[] args)
         {
             Animal animal = new Animal("Bosse", "Bird", "roars.");
-            Animal jackDog = new JackRussell();
-            Animal retriverDog = new GoldenRetriver();
-            Animal dog = new Dog();
-            Animal cat = new Cat();
-            Animal rat = new Rat();  
+            Dog jackDog = new JackRussell();
+            Dog retriverDog = new GoldenRetriver();
+            Dog dog = new Dog();
+            Cat cat = new Cat();
+            Rat rat = new Rat();  
 
             animal.MakeSound();
+            animal.
             Console.WriteLine();
 
             jackDog.MakeSound();
@@ -32,9 +33,9 @@ namespace Lab_6
             cat.MakeSound();
             Console.WriteLine();
 
-            rat.
+            rat.MakeSound();
 
-            rat.MakeSound(); // Calls the diffrent methods and it's new values.
+             // Calls the diffrent methods and it's new values.
         }
     }
 }
