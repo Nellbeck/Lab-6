@@ -10,7 +10,7 @@ namespace Lab_6
     {
         static void Main(string[] args)
         {
-            Animal animal = new Animal("Bosse", "Bird", "roars.");
+            Animal animal = new Animal("Bosse", "The Bird", "roars.");
             Dog jackDog = new JackRussell();
             Dog retriverDog = new GoldenRetriver();
             Dog dog = new Dog();
@@ -18,7 +18,6 @@ namespace Lab_6
             Rat rat = new Rat();  
 
             animal.MakeSound();
-            animal.
             Console.WriteLine();
 
             jackDog.MakeSound();
