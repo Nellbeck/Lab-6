@@ -13,7 +13,7 @@ namespace Lab_6
         {
             List<Animal> animals = new List<Animal>()
             {
-                new Animal("Bosse", "The Cow", "roars!"),
+                new Animal("Bosse", "The Cow", "roars!", true, false),
                 new JackRussell(),
                 new GoldenRetriver(),
                 new Dog(),
@@ -25,15 +25,21 @@ namespace Lab_6
 
             foreach (var function in animals) 
             {
-                if (function.Mammal == true)
+                if (function.Mammal && !function._Wild)
                 {
                     function.MakeSound();
-                    Console.WriteLine("Also a mammal!");
+                    Console.WriteLine("A domestic mammal!");
                 }
-                else 
+                else if (function.Mammal) 
                 {
                     function.MakeSound();
-                    Console.WriteLine("Is a reptile.");
+                    Console.WriteLine("A wild mammal!");
+                }
+
+                else if (!function.Mammal && function._Wild)
+                {
+                    function.MakeSound();
+                    Console.WriteLine("Is wild reptile.");
                 }
                     Console.WriteLine();
                 

@@ -12,6 +12,8 @@ namespace Lab_6
         bool _Posionness { get; set; }
         public Snake()
         {
+            Mammal = false;
+            _Wild = true;
             _Posionness = true;
             _AnimalType = "The Snake";
             _Name = "Sir Wazz";

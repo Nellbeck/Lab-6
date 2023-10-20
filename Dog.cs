@@ -12,6 +12,7 @@ namespace Lab_6
 
         public Dog()
         {
+            _Wild = false;
             Mammal = true;
             _Eyes = 2;
             _Fur = "short fur";

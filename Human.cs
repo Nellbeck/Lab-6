@@ -11,6 +11,7 @@ namespace Lab_6
         bool _Selfawarness { get; set; }
         public Human()
         {
+            _Wild = false;
             Mammal = true;
             _Selfawarness = true;
             _AnimalType = "The Man";

@@ -12,6 +12,7 @@ namespace Lab_6
 
         public Rat()
         {
+            _Wild = true;
             Mammal = true;
             _Eyes = 2;
             _Fur = "dirty fur";

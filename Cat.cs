@@ -11,6 +11,7 @@ namespace Lab_6
             public string _Jumps { get; set; } // new variable for just this sub-class without any default values.
         public Cat()
         {
+            _Wild = false;
             Mammal = true;
             _Eyes = 2;
             _Fur = "soft fur";
