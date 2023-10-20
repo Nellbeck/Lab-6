@@ -13,18 +13,30 @@ namespace Lab_6
         {
             List<Animal> animals = new List<Animal>()
             {
-                new Animal("Bosse", "The Bird", "roars!"),
+                new Animal("Bosse", "The Cow", "roars!"),
                 new JackRussell(),
                 new GoldenRetriver(),
                 new Dog(),
                 new Cat(),
-                new Rat()
+                new Rat(),
+                new Human(),
+                new Snake()
             };
 
             foreach (var function in animals) 
             {
-                function.MakeSound();
-                Console.WriteLine();
+                if (function.Mammal == true)
+                {
+                    function.MakeSound();
+                    Console.WriteLine("Also a mammal!");
+                }
+                else 
+                {
+                    function.MakeSound();
+                    Console.WriteLine("Is a reptile.");
+                }
+                    Console.WriteLine();
+                
             }
             //Animal animal = new Animal("Bosse", "The Bird", "roars.");
             //Dog jackDog = new JackRussell();

@@ -15,6 +15,12 @@ namespace Lab_6
         protected string _Teeth { get; set; }
         protected string _Tail { get; set; }
         protected string _Sound { get; set; } // protected propertys that every sub-class inheritance.
+        private bool _Mammal { get; set; }
+        public bool Mammal
+        {
+            get { return _Mammal; }
+            set { _Mammal = value; }
+        }
 
         public Animal() 
         { 
@@ -23,6 +29,7 @@ namespace Lab_6
 
         public Animal(string name, string type, string sound)
         {
+            _Mammal = true;
             _Name = name;
             _AnimalType = type;
             _Sound = sound;
