@@ -16,8 +16,8 @@ namespace Lab_6
         protected string _Tail { get; set; }
         protected string _Sound { get; set; } // protected propertys that every sub-class inheritance.
         private bool _Mammal { get; set; }
-        public bool _Wild { get; set; }
-        public bool Mammal
+        public bool _Wild { get; set; } // Bool to check if it's a wild animal.
+        public bool Mammal // Bool to check if it's a mammal.
         {
             get { return _Mammal; }
             set { _Mammal = value; }

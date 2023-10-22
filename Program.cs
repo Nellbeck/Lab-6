@@ -21,7 +21,7 @@ namespace Lab_6
                 new Rat(),
                 new Human(),
                 new Snake()
-            };
+            }; // A list of every class and saved into the object "animals".
 
             foreach (var function in animals) 
             {
@@ -42,38 +42,7 @@ namespace Lab_6
                     Console.WriteLine("Is wild reptile.");
                 }
                     Console.WriteLine();
-                
-            }
-            //Animal animal = new Animal("Bosse", "The Bird", "roars.");
-            //Dog jackDog = new JackRussell();
-            //Dog retriverDog = new GoldenRetriver();
-            //Dog dog = new Dog();
-            //Cat cat = new Cat();
-            //Rat rat = new Rat();  
-
-            //animal.MakeSound();
-            //Console.WriteLine();
-
-            //jackDog.MakeSound();
-            //jackDog.DogChases();
-            //Console.WriteLine();
-
-            //retriverDog.MakeSound();
-            //retriverDog.DogChases();
-            //Console.WriteLine();
-
-            //dog.MakeSound();
-            //dog.DogChases();
-            //Console.WriteLine();
-
-            //cat.MakeSound();
-            //cat.CatJumps();
-            //Console.WriteLine();
-
-            //rat.MakeSound();
-            
-
-             // Calls the diffrent methods from the objects and it's new values.
+            }// foreach loop with some if and else if statments to check if it's a mammal and/or a wild animal and run the shared method.
         }
     }
 }
